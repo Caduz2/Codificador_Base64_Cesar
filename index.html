@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Criptografia</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js" defer></script>
+            
+    </head>
+
+    <body>
+        <header>
+            <h1>Criptografia</h1><br>
+            <h2>Cesar e base64</h2>
+        </header>
+
+         <main>
+            
+            <div class="divGeral">
+                <div class="fraseNormal">
+                    <h2>Insira a frase a ser codificada:</h2><br>
+                    <input type="text" name="frase" id="entrada">                    
+                </div>
+
+                <h2>Escolha uma ação:</h2>
+
+                <div id="escolhaGeral">
+                    <br><input id="codifica" type="radio" name="selecao"> 
+                    <label for = "codificando">Codificar</label>
+                    <br><input id="decodifica" type="radio" name="selecao"> 
+                    <label for = "decodificando">Decodificar</label><br>
+                </div>
+
+                <h2>Escolha o método de codificação:</h2><br>
+                <select id="escolherMetodo">
+                  <option disabled selected>Selecione abaixo:</option>
+                  <option value = "1">Cifra de cesar</option>
+                  <option value = "2">Base64</option>
+                </select>
+
+                <div id="seCesar">
+                    <br><label for="selecaoDeCasas">Escolha qual será o avanço: </label>
+                    <input type="number" id="avanco" min="1" max="25" placeholder="0">
+
+                </div> 
+
+                <div id="botao">
+                    <button id="rodarBotao" type="submit"></button>
+                </div>
+
+                <div class="mensagens">
+                    <h2>Mensagem codificada:</h2><br>
+                    <input value = "" class="digitavel" id = "digitavel" type="text">
+                </div>
+
+                
+
+            </div>
+
+         </main>   
+
+
+        <footer>
+                ©Copyright 2022 Carlos Eduardo.
+        </footer>
+    </body>
+</html>

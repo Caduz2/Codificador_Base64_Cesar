@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+}
+
+html{
+    height: 100%;  
+}
+
+/* Apliacando plano de fundo*/
+body{
+    height: 100vh;
+    background-color: rgb(45, 99, 170);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 15px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+}
+
+/* Estilizando a divGeral */
+.divGeral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizando a div da frase*/
+.fraseNormal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0 25px;
+    text-size-adjust: 90%;
+}
+
+/* Estilizando o input da frase*/
+#entrada{
+    padding:10px 5px 30px 5px;
+    flex-wrap:nowrap;
+    border-radius: 10px;
+    width: 320px;
+    word-break: normal;
+    
+}
+
+/* Estilizando os radions buttons*/
+#escolhaGeral{
+    padding-bottom: 15px;
+}
+
+/* Estilizando a escolha Cesar ou Base 64*/
+#escolherMetodo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 200px;
+    padding: 5px 0 5px; 
+}
+
+
+
+/* Configurando a div do botão*/
+#botao{
+    
+    padding: 20px 0 20px;
+}
+
+/* Estilizando o botão */
+#rodarBotao{
+    background-color: rgb(165, 165, 165);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 160px;
+    height: 40px;
+    padding: 10px 5px 10px 5px; 
+}
+
+/* Estilizando o a div do resultado*/
+.mensagens{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px 20px 5px;
+}
+
+/* Estilizando o texto do resultado da codificação ou decodificação*/
+.digitavel{
+    padding:10px 0 30px 5px;
+    flex-wrap:nowrap;
+    border-radius: 10px;
+    width: 320px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
